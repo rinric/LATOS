@@ -20,10 +20,16 @@ const Confirm = () => {
             <p>Please set your new password</p>
         </div>
         <div className='confirm-form'>
-            
+            <div className='password-form'>
             <input type='password' className='confirm-password' placeholder='Enter New Password'></input>
+            <button type='button' className='visible-button'><img src={visibility}></img></button>
+            </div>
             
+            <div className='password-form'>
             <input type='password' className='confirm-password' placeholder='Confirm New Password'></input>
+            <button type='button' className='visible-button'><img src={visibility}></img></button>
+            </div>
+            
         </div>
         <button type='submit' className='confirm-submit' onClick={() => navigate("/Change")}>Reset Password</button>
       </div>

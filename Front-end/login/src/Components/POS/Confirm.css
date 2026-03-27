@@ -62,17 +62,43 @@ body, html {
     gap: 20px;
 }
 
+.password-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 346px;          
+}
+
 .confirm-password {
-    width: 346px;
+    width: 100%;
     height: 30px;
     border-radius: 30px;
     padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
 }
+
+.visible-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;             
+  transform: translateY(-90%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.visible-button img {
+  width: 20px;             
+  height: 20px;
+}
+
 
 
 .confirm-submit {
     background-color: #70020F;
-    width: 400px;
+    width: 346px;
     height: 50px;
     border-radius: 30px;
     padding: 10px;
